@@ -1,17 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>geometry||genus</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/62735e7d07.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-cyan-100 mt-2 shadow">
+        <div class="flex-1">
+          <a class="text-2xl p-3"
+            ><span class="font-semibold text-3xl">Interactive</span><br />
+            Geometry Genius</a
+          >
+        </div>
+        <div class="flex-none">
+          <button class="btn border-none bg-blue-500 text-white">Blog</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="md:flex">
+        <div class="md:w-[70%] mt-4 mx-3 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card mt-4 w-full bg-pink-300 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area(A)=0.5*b*h</p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="b"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="h"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 w-full bg-pink-300 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area(A)=w*l</p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="W"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="L"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 w-full bg-pink-300 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Parallelogram</h2>
+              <p>Area(A)=b*h</p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="b"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="h"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 w-full bg-pink-300 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rhombus</h2>
+              <p>Area(A)=.5*d<sub>1</sub>*d<sub>2</sub></p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="b"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="h"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 w-full bg-lime-300 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area(A)=.5*p*b</p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="b"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="h"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 w-full bg-lime-200 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area(A)=3.14*a*b</p>
+              <p class="p-3">
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="b"
+                />
+                cm
+                <input
+                  class="rounded-xl pl-4 w-[20%]"
+                  type="text"
+                  placeholder="h"
+                />
+                cm
+              </p>
+              <div class="card-actions">
+                <button class="btn md:btn-md lg:btn-lg btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 md:w-[30%]">
+           <h1 class="text-center text-3xl font-bold underline ">Area Calculation</h1> 
+        </div>
+      </section>
+    </main>
 
-</head>
-<body>
-   
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
