@@ -1,7 +1,7 @@
 let serial =0;
 // blog button
 document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href='questionAnswer.html';
+    window.location.href='Blog.html';
 });
 
 
