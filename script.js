@@ -130,8 +130,9 @@ document.getElementById('btn-ellipse').addEventListener('click',function(){
    const Heading=heading("ellipse");
    const base=inputField1('ellipse-a');
    const height=inputField2('ellipse-b');
-   const Area=triangleRhombusPentagonAreaLaw(base, height);
-   displayData(serial, Heading, Area);
+   const Area=3.14*base*height;
+   const area=Area.toFixed(2);
+   displayData(serial, Heading, area);
    
 })
 
